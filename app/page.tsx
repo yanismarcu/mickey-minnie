@@ -70,7 +70,7 @@ function MusicCard() {
 }
 
 function Bouquet() {
-  return <div className="bouquet" aria-label="Buchet ilustrat de trandafiri" role="img"><div className="stem stem-one" /><div className="stem stem-two" /><div className="stem stem-three" /><div className="leaf leaf-one" /><div className="leaf leaf-two" /><div className="rose rose-one"><i /><i /><i /></div><div className="rose rose-two"><i /><i /><i /></div><div className="rose rose-three"><i /><i /><i /></div></div>
+  return <div className="bouquet" aria-label="Buchet ilustrat de trandafiri" role="img"><div className="bouquet-paper" /><div className="stem stem-one" /><div className="stem stem-two" /><div className="stem stem-three" /><div className="leaf leaf-one" /><div className="leaf leaf-two" /><div className="rose rose-one"><i /><i /><i /></div><div className="rose rose-two"><i /><i /><i /></div><div className="rose rose-three"><i /><i /><i /></div><div className="bouquet-ribbon" /></div>
 }
 
 export default function Page() {
@@ -86,7 +86,7 @@ export default function Page() {
 
       <section className="memories section" id="amintiri"><div className="section-heading"><span className="eyebrow">Capitolul I</span><h2>Amintiri pe care<br /><em>le păstrăm.</em></h2><p>Unele momente merită să fie retrăite<br className="desktop-only" /> la nesfârșit.</p></div><PhotoCarousel /></section>
 
-      <section className="letter-section section" id="scrisoare"><div className="letter-paper"><div className="paper-pin" /><span className="eyebrow">Capitolul II · O scrisoare</span><h2>Dragostea mea,</h2><div className="letter-body"><p>Îți mulțumesc pentru fiecare zâmbet, pentru fiecare îmbrățișare și pentru toate momentele în care mi-ai făcut lumea mai frumoasă.</p><p>Cu tine, lucrurile simple devin amintiri, iar zilele obișnuite devin povești pe care vreau să le spun mereu.</p><p>Te iubesc mai mult decât pot spune cuvintele și aleg să te iubesc în fiecare zi, din nou.</p></div><p className="signature">A ta, mereu</p></div></section>
+      <section className="letter-section section" id="scrisoare"><div className="letter-paper"><div className="paper-pin" /><span className="eyebrow">Capitolul II · O scrisoare</span><h2>Dragostea mea,</h2><div className="letter-body"><p>Dragă mea Minnie,</p><p>Fără tine, întreaga mea lume își pierde culorile. Râsul tău dulce este muzica mea preferată, iar fiecare aventură alături de tine e pură magie. Îți mulțumesc că îmi luminezi fiecare zi cu zâmbetul tău minunat.</p><p>Ești fericirea mea dintotdeauna.</p></div><p className="signature">Cu toată dragostea din lume,<br />Al tău forever, Mickey</p></div></section>
 
       <section className="music-section section"><div className="section-heading"><span className="eyebrow">Capitolul III · Coloana sonoră</span><h2>Dacă iubirea<br /><em>ar avea un sunet.</em></h2></div><MusicCard /></section>
 
