@@ -1,0 +1,312 @@
+:root {
+  --rose: #e24a86;
+  --ink: #3a1524;
+  --paper: #fffaf4;
+  --shadow: 0 24px 60px rgba(90, 24, 48, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, #ffd0e4 0, transparent 36%),
+    radial-gradient(circle at 85% 10%, #ffefc2 0, transparent 32%),
+    radial-gradient(circle at 80% 90%, #d9c4ff 0, transparent 38%),
+    linear-gradient(160deg, #f7c4d8, #ffd9c4 45%, #f3cce8);
+  overflow-x: hidden;
+}
+
+.sparkles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, #fff 1px, transparent 1.6px),
+    radial-gradient(circle, #ffe9a8 1.2px, transparent 2px);
+  background-size: 90px 90px, 140px 140px;
+  background-position: 0 0, 40px 60px;
+  opacity: 0.35;
+}
+
+.book {
+  width: min(560px, calc(100% - 32px));
+  margin: 36px auto 110px;
+  position: relative;
+  min-height: 72vh;
+}
+
+.page {
+  display: none;
+}
+
+.page.is-active {
+  display: block;
+  animation: rise 0.55s ease;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(-0.4deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.paper {
+  background:
+    linear-gradient(180deg, #ffffff, transparent 22%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 31px,
+      rgba(194, 24, 91, 0.12) 31px 32px
+    ),
+    var(--paper);
+  border-radius: 18px 22px 16px 20px;
+  box-shadow: var(--shadow);
+  min-height: 640px;
+  padding: 48px 44px 40px;
+  position: relative;
+  border: 1px solid #f3d0dc;
+}
+
+.paper::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px dashed rgba(226, 74, 134, 0.28);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 28%, #fff, transparent 42%),
+    linear-gradient(180deg, #fff4ea, #ffd6e6 70%, #f7c0d8);
+}
+
+.wax-seal {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 35% 30%, #ff7ea8, #b01346);
+  color: #fff7ea;
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  box-shadow: 0 10px 20px rgba(140, 20, 50, 0.35);
+  margin-bottom: 28px;
+}
+
+.cover-kicker {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0;
+  color: #a24b6a;
+}
+
+.cover h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(64px, 14vw, 92px);
+  font-weight: 400;
+  margin: 8px 0 18px;
+  color: #c2185b;
+  text-shadow: 0 6px 0 rgba(255, 255, 255, 0.45);
+}
+
+.cover-from {
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.mini-hearts {
+  display: flex;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.mini-hearts span {
+  width: 16px;
+  height: 16px;
+  background: var(--rose);
+  transform: rotate(45deg);
+  position: relative;
+  opacity: 0.85;
+}
+
+.mini-hearts span::before,
+.mini-hearts span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.mini-hearts span::before {
+  top: -8px;
+  left: 0;
+}
+
+.mini-hearts span::after {
+  left: -8px;
+  top: 0;
+}
+
+.letter {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2d101c;
+}
+
+.greeting {
+  font-family: "Great Vibes", cursive;
+  font-size: 46px;
+  color: #c2185b;
+  margin: 8px 0 28px;
+}
+
+.letter p {
+  margin: 0 0 22px;
+}
+
+.sign-off {
+  margin-top: 28px !important;
+}
+
+.signature {
+  font-family: "Great Vibes", cursive;
+  font-size: 52px;
+  color: #c2185b;
+  text-align: right;
+  margin: 0 12px 0 0 !important;
+}
+
+.bouquet-page {
+  background: linear-gradient(180deg, #fff8f2 0%, #ffe9f2 48%, #f7d5e6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.bouquet-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
+  color: #c2185b;
+  margin: 0;
+}
+
+.bouquet-caption {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  margin: 4px 0 8px;
+  color: #8a4660;
+}
+
+.bouquet-wrap {
+  width: min(420px, 100%);
+  margin-top: -8px;
+}
+
+.bouquet {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 16px 14px rgba(70, 20, 40, 0.28));
+}
+
+.bloom {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.nav {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 247, 240, 0.88);
+  backdrop-filter: blur(10px);
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(90, 24, 48, 0.2);
+}
+
+.nav-btn {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff7aa8, #d21d5c);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: #f3b4c8;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dot.is-active {
+  background: #c2185b;
+  transform: scale(1.2);
+}
+
+@media (max-width: 560px) {
+  .paper {
+    min-height: 78vh;
+    padding: 36px 24px 28px;
+  }
+
+  .letter {
+    font-size: 24px;
+  }
+
+  .greeting {
+    font-size: 38px;
+  }
+}

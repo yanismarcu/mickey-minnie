@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pentru Minnie, de la Mickey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <div class="sparkles" aria-hidden="true"></div>
+
+    <main class="book">
+      <section class="page is-active" data-page="0">
+        <div class="paper cover">
+          <div class="wax-seal">M + M</div>
+          <p class="cover-kicker">O scrisoare pentru</p>
+          <h1>Minnie</h1>
+          <p class="cover-from">cu toată dragostea,<br />Mickey</p>
+          <div class="mini-hearts" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-page="1">
+        <div class="paper letter">
+          <p class="greeting">Draga mea Minnie,</p>
+          <p>
+            Fără tine, întreaga mea lume își pierde culorile. Râsul tău dulce
+            este muzica mea preferată, iar fiecare aventură alături de tine e
+            pură magie. Îți mulțumesc că îmi luminezi fiecare zi cu zâmbetul tău
+            minunat.
+          </p>
+          <p>
+            Ești fericirea mea dintotdeauna. Cu toată dragostea din lume,
+          </p>
+          <p class="sign-off">Al tău forever,</p>
+          <p class="signature">Mickey</p>
+        </div>
+      </section>
+
+      <section class="page" data-page="2">
+        <div class="paper bouquet-page">
+          <p class="bouquet-title">Pentru tine</p>
+          <p class="bouquet-caption">un buchet plin de flori și de iubire</p>
+          <div class="bouquet-wrap" aria-hidden="true">
+            <svg
+              class="bouquet"
+              viewBox="0 0 420 520"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Buchet de flori"
+            >
+              <defs>
+                <radialGradient id="petalPink" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#ffe4ef" />
+                  <stop offset="55%" stop-color="#ff8fb8" />
+                  <stop offset="100%" stop-color="#e24a86" />
+                </radialGradient>
+                <radialGradient id="petalRed" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#ffd6de" />
+                  <stop offset="50%" stop-color="#ff5d7a" />
+                  <stop offset="100%" stop-color="#c81e4a" />
+                </radialGradient>
+                <radialGradient id="petalBlush" cx="40%" cy="28%" r="72%">
+                  <stop offset="0%" stop-color="#fff6f0" />
+                  <stop offset="50%" stop-color="#ffb7c8" />
+                  <stop offset="100%" stop-color="#ef6d92" />
+                </radialGradient>
+                <radialGradient id="petalCream" cx="38%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#fffdf8" />
+                  <stop offset="55%" stop-color="#ffe3c4" />
+                  <stop offset="100%" stop-color="#f0b27a" />
+                </radialGradient>
+                <radialGradient id="petalLavender" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#f8f0ff" />
+                  <stop offset="55%" stop-color="#d7b4f8" />
+                  <stop offset="100%" stop-color="#a56ad6" />
+                </radialGradient>
+                <radialGradient id="petalPeony" cx="40%" cy="30%" r="75%">
+                  <stop offset="0%" stop-color="#fff0f6" />
+                  <stop offset="45%" stop-color="#ff9ec4" />
+                  <stop offset="100%" stop-color="#d94a86" />
+                </radialGradient>
+                <radialGradient id="centerGold" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff4b0" />
+                  <stop offset="100%" stop-color="#e09a2b" />
+                </radialGradient>
+                <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#b7e38d" />
+                  <stop offset="100%" stop-color="#3d8a45" />
+                </linearGradient>
+                <linearGradient id="leafDark" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7cbc62" />
+                  <stop offset="100%" stop-color="#2a6b34" />
+                </linearGradient>
+                <linearGradient id="stemGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#5fa85a" />
+                  <stop offset="100%" stop-color="#2f6b38" />
+                </linearGradient>
+                <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ffd1e4" />
+                  <stop offset="40%" stop-color="#ff4d88" />
+                  <stop offset="100%" stop-color="#b0164a" />
+                </linearGradient>
+                <filter id="soft">
+                  <feGaussianBlur stdDeviation="0.6" />
+                </filter>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="3" result="b" />
+                  <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- stems -->
+              <g stroke="url(#stemGrad)" stroke-linecap="round" fill="none">
+                <path d="M210 250 C205 320 198 390 210 470" stroke-width="5" />
+                <path d="M198 255 C175 330 155 400 150 478" stroke-width="4" />
+                <path d="M222 255 C245 335 268 405 275 478" stroke-width="4" />
+                <path d="M188 260 C160 340 128 410 118 485" stroke-width="3.2" />
+                <path d="M232 260 C262 345 300 415 312 485" stroke-width="3.2" />
+                <path d="M210 270 C210 360 205 430 208 490" stroke-width="3" />
+                <path d="M175 280 C150 360 132 430 128 492" stroke-width="2.6" />
+                <path d="M245 280 C272 365 292 435 298 492" stroke-width="2.6" />
+              </g>
+
+              <!-- foliage -->
+              <g fill="url(#leafGrad)" opacity="0.95">
+                <ellipse transform="rotate(-38 118 310)" cx="118" cy="310" rx="34" ry="14" />
+                <ellipse transform="rotate(42 302 318)" cx="302" cy="318" rx="36" ry="15" fill="url(#leafDark)" />
+                <ellipse transform="rotate(-55 92 360)" cx="92" cy="360" rx="40" ry="15" fill="url(#leafDark)" />
+                <ellipse transform="rotate(52 328 368)" cx="328" cy="368" rx="42" ry="16" />
+                <ellipse transform="rotate(-28 140 400)" cx="140" cy="400" rx="32" ry="12" />
+                <ellipse transform="rotate(30 280 408)" cx="280" cy="408" rx="34" ry="13" fill="url(#leafDark)" />
+                <ellipse transform="rotate(-70 155 250)" cx="155" cy="250" rx="28" ry="11" />
+                <ellipse transform="rotate(68 268 248)" cx="268" cy="248" rx="29" ry="11" />
+                <ellipse transform="rotate(-18 78 300)" cx="78" cy="300" rx="26" ry="10" />
+                <ellipse transform="rotate(22 342 292)" cx="342" cy="292" rx="27" ry="10" fill="url(#leafDark)" />
+                <ellipse transform="rotate(12 210 430)" cx="210" cy="430" rx="22" ry="9" />
+                <ellipse transform="rotate(-48 175 330)" cx="175" cy="330" rx="24" ry="10" />
+                <ellipse transform="rotate(50 248 336)" cx="248" cy="336" rx="25" ry="10" />
+              </g>
+
+              <!-- baby's breath -->
+              <g fill="#fff7fb" opacity="0.9">
+                <circle cx="96" cy="220" r="3.2" />
+                <circle cx="108" cy="232" r="2.4" />
+                <circle cx="88" cy="238" r="2.8" />
+                <circle cx="318" cy="214" r="3" />
+                <circle cx="332" cy="228" r="2.5" />
+                <circle cx="308" cy="236" r="2.2" />
+                <circle cx="70" cy="268" r="2.6" />
+                <circle cx="348" cy="270" r="2.8" />
+                <circle cx="124" cy="188" r="2.3" />
+                <circle cx="296" cy="182" r="2.4" />
+                <circle cx="160" cy="150" r="2.1" />
+                <circle cx="258" cy="146" r="2.2" />
+                <circle cx="48" cy="310" r="2.4" />
+                <circle cx="372" cy="318" r="2.5" />
+                <circle cx="186" cy="118" r="2" />
+                <circle cx="236" cy="112" r="2.1" />
+              </g>
+
+              <!-- helper flower groups -->
+              <g class="bloom" transform="translate(92,210) scale(0.72)">
+                <ellipse cx="-18" cy="6" rx="22" ry="14" fill="url(#petalLavender)" transform="rotate(-40)" />
+                <ellipse cx="18" cy="6" rx="22" ry="14" fill="url(#petalLavender)" transform="rotate(40)" />
+                <ellipse cx="0" cy="-16" rx="20" ry="16" fill="url(#petalLavender)" />
+                <ellipse cx="-12" cy="18" rx="18" ry="12" fill="url(#petalLavender)" />
+                <ellipse cx="12" cy="18" rx="18" ry="12" fill="url(#petalLavender)" />
+                <circle cx="0" cy="2" r="8" fill="url(#centerGold)" />
+              </g>
+              <g class="bloom" transform="translate(328,205) scale(0.7)">
+                <ellipse cx="-18" cy="6" rx="22" ry="14" fill="url(#petalCream)" transform="rotate(-40)" />
+                <ellipse cx="18" cy="6" rx="22" ry="14" fill="url(#petalCream)" transform="rotate(40)" />
+                <ellipse cx="0" cy="-16" rx="20" ry="16" fill="url(#petalCream)" />
+                <ellipse cx="-12" cy="18" rx="18" ry="12" fill="url(#petalCream)" />
+                <ellipse cx="12" cy="18" rx="18" ry="12" fill="url(#petalCream)" />
+                <circle cx="0" cy="2" r="8" fill="url(#centerGold)" />
+              </g>
+
+              <!-- back roses -->
+              <g transform="translate(150,168) scale(0.86)">
+                <circle cx="0" cy="0" r="28" fill="url(#petalPink)" />
+                <circle cx="-10" cy="-6" r="16" fill="#ffd0e2" opacity="0.85" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#ff6ea0" />
+                <circle cx="2" cy="2" r="7" fill="#ffeaf2" />
+              </g>
+              <g transform="translate(270,162) scale(0.9)">
+                <circle cx="0" cy="0" r="30" fill="url(#petalRed)" />
+                <circle cx="8" cy="-8" r="15" fill="#ffb3c2" opacity="0.8" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#e23b63" />
+                <circle cx="1" cy="1" r="7" fill="#ffdce4" />
+              </g>
+              <g transform="translate(210,118) scale(1)">
+                <circle cx="0" cy="0" r="34" fill="url(#petalPeony)" />
+                <circle cx="-12" cy="-8" r="18" fill="#ffc2d8" />
+                <circle cx="12" cy="-10" r="16" fill="#ffa8c8" />
+                <circle cx="0" cy="8" r="16" fill="#ff7eab" />
+                <path d="M-10 -6 C-4 -24 12 -20 10 -4 C20 -12 24 2 10 8 C20 16 2 24 -4 12 C-16 20 -22 4 -8 2 C-22 -8 -18 2 -10 -6Z" fill="#e24a86" />
+                <circle cx="0" cy="0" r="8" fill="#fff0f6" />
+              </g>
+
+              <!-- side roses -->
+              <g transform="translate(78,268) scale(0.78)">
+                <circle cx="0" cy="0" r="28" fill="url(#petalRed)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#d81f4e" />
+                <circle cx="2" cy="2" r="6" fill="#ffd0da" />
+              </g>
+              <g transform="translate(344,272) scale(0.8)">
+                <circle cx="0" cy="0" r="28" fill="url(#petalPink)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#ef5c93" />
+                <circle cx="2" cy="2" r="6" fill="#ffe4ef" />
+              </g>
+              <g transform="translate(120,300) scale(0.7)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalBlush)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#f06d96" />
+                <circle cx="1" cy="1" r="6" fill="#fff1f6" />
+              </g>
+              <g transform="translate(300,305) scale(0.72)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalCream)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#e8a56a" />
+                <circle cx="1" cy="1" r="6" fill="#fff8ee" />
+              </g>
+
+              <!-- daisies -->
+              <g transform="translate(168,236)">
+                <g fill="#fff8fb">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="-12" cy="-12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="-12" rx="12" ry="6" transform="rotate(45)" />
+                  <ellipse cx="-12" cy="12" rx="12" ry="6" transform="rotate(45)" />
+                </g>
+                <circle cx="0" cy="0" r="7" fill="url(#centerGold)" />
+              </g>
+              <g transform="translate(255,242) scale(0.85)">
+                <g fill="#fff">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="-12" cy="-12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="-12" rx="12" ry="6" transform="rotate(45)" />
+                  <ellipse cx="-12" cy="12" rx="12" ry="6" transform="rotate(45)" />
+                </g>
+                <circle cx="0" cy="0" r="7" fill="url(#centerGold)" />
+              </g>
+              <g transform="translate(48,330) scale(0.7)">
+                <g fill="#fff6fb">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="-12" cy="-12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="12" rx="12" ry="6" transform="rotate(-45)" />
+                </g>
+                <circle cx="0" cy="0" r="6.5" fill="url(#centerGold)" />
+              </g>
+              <g transform="translate(372,338) scale(0.68)">
+                <g fill="#fff">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="12" cy="-12" rx="12" ry="6" transform="rotate(45)" />
+                  <ellipse cx="-12" cy="12" rx="12" ry="6" transform="rotate(45)" />
+                </g>
+                <circle cx="0" cy="0" r="6.5" fill="url(#centerGold)" />
+              </g>
+
+              <!-- front cluster -->
+              <g transform="translate(210,210) scale(1.08)">
+                <circle cx="-18" cy="8" r="22" fill="url(#petalPink)" />
+                <circle cx="18" cy="10" r="21" fill="url(#petalRed)" />
+                <circle cx="0" cy="-8" r="24" fill="url(#petalPeony)" />
+                <circle cx="-8" cy="-4" r="12" fill="#ffd5e6" />
+                <circle cx="10" cy="-6" r="11" fill="#ffb7c9" />
+                <path d="M-10 -4 C-2 -20 14 -16 10 -2 C20 -10 22 6 8 8 C16 18 0 22 -4 12 C-16 18 -22 4 -8 4 C-20 -6 -16 2 -10 -4Z" fill="#dc3d78" />
+                <circle cx="0" cy="2" r="7" fill="#fff3f8" />
+              </g>
+              <g transform="translate(175,188) scale(0.62)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalLavender)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#b57de0" />
+                <circle cx="1" cy="1" r="6" fill="#f4e8ff" />
+              </g>
+              <g transform="translate(248,186) scale(0.58)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalBlush)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#ee6a98" />
+                <circle cx="1" cy="1" r="6" fill="#fff0f5" />
+              </g>
+              <g transform="translate(132,232) scale(0.55)">
+                <circle cx="0" cy="0" r="24" fill="url(#petalCream)" />
+                <circle cx="0" cy="0" r="8" fill="#ffe7c8" />
+              </g>
+              <g transform="translate(288,238) scale(0.52)">
+                <circle cx="0" cy="0" r="24" fill="url(#petalPink)" />
+                <circle cx="0" cy="0" r="8" fill="#ffd8e8" />
+              </g>
+
+              <!-- extra small blossoms -->
+              <g transform="translate(64,220) scale(0.42)">
+                <circle cx="0" cy="-10" r="12" fill="#ff9ec0" />
+                <circle cx="-10" cy="6" r="12" fill="#ff7eaa" />
+                <circle cx="10" cy="6" r="12" fill="#ffb3d0" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+              <g transform="translate(356,224) scale(0.4)">
+                <circle cx="0" cy="-10" r="12" fill="#f3c4ff" />
+                <circle cx="-10" cy="6" r="12" fill="#d9a0f0" />
+                <circle cx="10" cy="6" r="12" fill="#f0d6ff" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+              <g transform="translate(200,268) scale(0.38)">
+                <circle cx="0" cy="-10" r="12" fill="#ffd0a8" />
+                <circle cx="-10" cy="6" r="12" fill="#ffb07a" />
+                <circle cx="10" cy="6" r="12" fill="#ffe0c0" />
+                <circle cx="0" cy="0" r="6" fill="#ffd36a" />
+              </g>
+              <g transform="translate(226,272) scale(0.36)">
+                <circle cx="0" cy="-10" r="12" fill="#ff8eb8" />
+                <circle cx="-10" cy="6" r="12" fill="#ef5d93" />
+                <circle cx="10" cy="6" r="12" fill="#ffc0d8" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+
+              <g transform="translate(210,86) scale(0.62)">
+                <circle cx="0" cy="0" r="28" fill="url(#petalRed)" />
+                <circle cx="-8" cy="-8" r="14" fill="#ffc0cc" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#c81e4a" />
+                <circle cx="2" cy="2" r="6" fill="#ffe4ea" />
+              </g>
+              <g transform="translate(112,160) scale(0.58)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalPink)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#e24a86" />
+                <circle cx="2" cy="1" r="6" fill="#ffe8f2" />
+              </g>
+              <g transform="translate(308,154) scale(0.6)">
+                <circle cx="0" cy="0" r="26" fill="url(#petalPeony)" />
+                <path d="M-8 -8 C-2 -22 10 -18 8 -6 C16 -14 22 -2 10 4 C18 12 4 20 -2 10 C-14 18 -20 4 -8 2 C-18 -6 -16 2 -8 -8Z" fill="#d94a86" />
+                <circle cx="2" cy="1" r="6" fill="#fff0f6" />
+              </g>
+              <g transform="translate(54,248) scale(0.5)">
+                <circle cx="0" cy="0" r="24" fill="url(#petalBlush)" />
+                <circle cx="0" cy="0" r="8" fill="#ffe0ea" />
+              </g>
+              <g transform="translate(366,252) scale(0.5)">
+                <circle cx="0" cy="0" r="24" fill="url(#petalLavender)" />
+                <circle cx="0" cy="0" r="8" fill="#f3e4ff" />
+              </g>
+              <g transform="translate(96,348) scale(0.48)">
+                <g fill="#fff">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="-12" cy="-12" rx="12" ry="6" transform="rotate(-45)" />
+                  <ellipse cx="12" cy="12" rx="12" ry="6" transform="rotate(-45)" />
+                </g>
+                <circle cx="0" cy="0" r="7" fill="url(#centerGold)" />
+              </g>
+              <g transform="translate(324,352) scale(0.48)">
+                <g fill="#fff8fb">
+                  <ellipse cx="0" cy="-16" rx="6" ry="14" />
+                  <ellipse cx="0" cy="16" rx="6" ry="14" />
+                  <ellipse cx="-16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="16" cy="0" rx="14" ry="6" />
+                  <ellipse cx="12" cy="-12" rx="12" ry="6" transform="rotate(45)" />
+                  <ellipse cx="-12" cy="12" rx="12" ry="6" transform="rotate(45)" />
+                </g>
+                <circle cx="0" cy="0" r="7" fill="url(#centerGold)" />
+              </g>
+              <g transform="translate(148,268) scale(0.44)">
+                <circle cx="0" cy="-10" r="12" fill="#ff6b9a" />
+                <circle cx="-10" cy="6" r="12" fill="#e23b63" />
+                <circle cx="10" cy="6" r="12" fill="#ff9bbb" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+              <g transform="translate(270,266) scale(0.44)">
+                <circle cx="0" cy="-10" r="12" fill="#ffc48a" />
+                <circle cx="-10" cy="6" r="12" fill="#f0a05a" />
+                <circle cx="10" cy="6" r="12" fill="#ffe0b8" />
+                <circle cx="0" cy="0" r="6" fill="#ffd36a" />
+              </g>
+              <g transform="translate(186,148) scale(0.42)">
+                <circle cx="0" cy="-10" r="12" fill="#e8b4ff" />
+                <circle cx="-10" cy="6" r="12" fill="#c784e8" />
+                <circle cx="10" cy="6" r="12" fill="#f4d2ff" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+              <g transform="translate(234,148) scale(0.42)">
+                <circle cx="0" cy="-10" r="12" fill="#ff9ec0" />
+                <circle cx="-10" cy="6" r="12" fill="#ff7eaa" />
+                <circle cx="10" cy="6" r="12" fill="#ffc4da" />
+                <circle cx="0" cy="0" r="6" fill="#ffe08a" />
+              </g>
+
+              <!-- ribbon -->
+              <g filter="url(#glow)">
+                <path
+                  d="M150 365 C175 348 190 358 210 358 C230 358 245 348 270 365"
+                  fill="none"
+                  stroke="url(#ribbon)"
+                  stroke-width="16"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M210 358 C198 372 202 392 188 418"
+                  fill="none"
+                  stroke="url(#ribbon)"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M210 358 C222 374 228 394 238 422"
+                  fill="none"
+                  stroke="url(#ribbon)"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <ellipse cx="186" cy="368" rx="28" ry="16" fill="url(#ribbon)" transform="rotate(-28 186 368)" />
+                <ellipse cx="236" cy="368" rx="28" ry="16" fill="url(#ribbon)" transform="rotate(28 236 368)" />
+                <circle cx="210" cy="360" r="13" fill="#ff7aa8" />
+                <circle cx="206" cy="356" r="5" fill="#ffd0e2" opacity="0.8" />
+              </g>
+
+              <!-- sparkles -->
+              <g fill="#fff6c8" opacity="0.95">
+                <polygon points="46,180 49,188 57,191 49,194 46,202 43,194 35,191 43,188" />
+                <polygon points="370,168 373,175 381,178 373,181 370,188 367,181 359,178 367,175" />
+                <polygon points="210,72 213,80 221,83 213,86 210,94 207,86 199,83 207,80" />
+                <polygon points="88,150 90,155 95,157 90,159 88,164 86,159 81,157 86,155" />
+                <polygon points="332,148 334,153 339,155 334,157 332,162 330,157 325,155 330,153" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav" aria-label="Pagini">
+      <button type="button" class="nav-btn" id="prev" aria-label="Pagina anterioară">
+        ←
+      </button>
+      <div class="dots" id="dots"></div>
+      <button type="button" class="nav-btn" id="next" aria-label="Pagina următoare">
+        →
+      </button>
+    </nav>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
