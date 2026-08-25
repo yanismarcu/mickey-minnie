@@ -58,12 +58,13 @@ function MusicCard() {
         <h3>Minnie&apos;s Yoo Hoo!</h3>
         <p>Un cântec mic pentru o iubire cât o lume.</p>
         <div className="music-actions">
-          <button className="play-button" onClick={() => setPlaying(!playing)} aria-label={playing ? 'Pauză' : 'Redare'}>
+          <button className="play-button" onClick={() => { setPlaying(!playing); if (!playing) window.open('https://www.youtube.com/results?search_query=Minnie%27s+Yoo+Hoo', '_blank', 'noopener,noreferrer') }} aria-label={playing ? 'Pauză' : 'Redare'}>
             {playing ? <Pause size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" />}
             {playing ? 'Pauză' : 'Ascultă'}
           </button>
-          <a href="https://open.spotify.com/search/Minnie's%20Yoo%20Hoo" target="_blank" rel="noreferrer" className="spotify-link">Spotify <ExternalLink size={14} /></a>
+          <a href="https://www.youtube.com/results?search_query=Minnie%27s+Yoo+Hoo" target="_blank" rel="noreferrer" className="spotify-link">Deschide melodia <ExternalLink size={14} /></a>
         </div>
+        {playing && <p className="player-note">Melodia se deschide pe YouTube într-o filă nouă, pentru redare.</p>}
       </div>
     </div>
   )
